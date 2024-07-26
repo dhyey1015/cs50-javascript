@@ -2,25 +2,9 @@
 <html>
     <body>
         <title>Counter</title>
-        <script>
 
-            let counter = 0
-            function count(){
-                counter+=1;
-                document.querySelector('h1').innerHTML= counter;
-                
-                if (counter % 10 === 0){
-                    alert(`Count is now:${counter}`)
-                }
-            }
+        <script src="counter.js"> </script>
 
-            document.addEventListener('DOMContentLoaded', function(){
-                
-                document.querySelector('button').onclick = count;
-            })
-            
-
-        </script>
         <h1>0</h1>
         <button>Count</button>
     </body>
