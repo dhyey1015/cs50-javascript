@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <title>Hello!</title>
+        <script>
+            function hello (){
+                let greet =document.querySelector('h1');
+                if( greet.innerHTML === 'hello!'){
+                    greet.innerHTML = 'Goodbye!';
+                }else{
+                    greet.innerHTML = 'hello!'
+                }
+            }
+        </script>
+
+        <h1>hello!</h1>
+        <button onclick = "hello()">Click Here</button>
+    </body>
+</html>
