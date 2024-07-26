@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <title>Hello!</title>
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+
+                document.querySelector('form').onsubmit = function(){
+                    const name = document.querySelector('#name').value
+                    alert(`hello, ${name}!`)
+                };
+
+            })
+        </script>
+
+        <h1>hello!</h1>
+        <form>
+            <input autofocus id="name" placeholder="Name" type="text"> <!- id =name added to uniquely identify this input>
+            <input type="submit">
+        </form>
+    </body>
+</html>
