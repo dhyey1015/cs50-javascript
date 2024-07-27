@@ -1,14 +1,16 @@
-let counter = 0
+if (!localStorage.getItem('counts')){
+    localStorage.setItem('counts', 0)
+}
             function count(){
-                counter+=1;
-                document.querySelector('h1').innerHTML= counter;
-                
-                if (counter % 10 === 0){
-                    alert(`Count is now:${counter}`)
-                }
+                let counts = localStorage.getItem('counts')
+                counts++;
+                document.querySelector('h1').innerHTML= counts;
+                localStorage.setItem('counts', counts);
             }
 
             document.addEventListener('DOMContentLoaded', function(){
+
+                document.querySelector('h1').innerHTML = localStorage.getItem('counts');
                 
                 document.querySelector('button').onclick = count;
             })
